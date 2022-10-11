@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#screen {
+    width: 9999px;
+    height: 9999px;
+    animation: 6s nshow infinite; 
+}
+#screen img {
+    float: left;
+}
+
+#tv {
+    width: 1280px;
+    height: 800px;
+    overflow: hidden;
+}
+
+@keyframes nshow {
+    0% {}  
+    50% { transform: translateX( 0px);  }
+    51% { transform: translateX(-1280px); }
+    100% { transform: translateX(-1280px); }
+}
